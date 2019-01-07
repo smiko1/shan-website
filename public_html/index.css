@@ -1,0 +1,105 @@
+
+/* 
+    Created on : Jan 3, 2019, 12:08:05 PM
+    Author     : Shannon Miko
+*/
+
+/* HOME PAGE */
+body {
+    font-family: Georgia;
+    background-color: #AFEEEE;
+}
+
+h1 {
+    text-align: center;
+}
+
+nav {
+    font-size: 20px;
+    color: black;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: #5A525E;
+}
+
+iframe {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.nav-bar {
+    background-color: #D5BFD9;
+    padding: 1%;
+}
+.nav-bar-item {
+    padding-right: 8%;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+
+
+/* NEWSLETTER SUBSCRIPTIONS */
+form {
+  border: 3px solid #D7BDE2;
+  width: 100%;
+}
+
+.newsletter-container {
+  background-color: #AFEEEE;
+  text-align: center;
+  padding: 8%;
+}
+
+.container {
+  padding: 1%;
+  background-color: #AFEEEE;
+  text-align: center;
+  border: 3px solid #D7BDE2;
+  width: 50%;
+  margin-left: 10%;
+  margin: 5%;
+}
+
+input[type=text], input[type=submit] {
+  width: 90%;
+  padding: 1%;
+  margin: 6px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  background-color: #AF7AC5;
+  color: white;
+  border: none;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+
+.form-area {
+    float: right;
+    padding: 10%;
+}
+
+/* FOOTER */
+.footer-area {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #D5BFD9;
+    width: 100%;
+    padding: 0.5%;
+}
