@@ -6,17 +6,17 @@
 
 /* HOME PAGE */
 body {
-    font-family: Georgia;
+    font-family: 'Patrick Hand', cursive;
     background-color: #AFEEEE;
 }
 
-h1 {
+h1, h2, h3 {
     text-align: center;
 }
 
 p {
     font-size: 18px;
-    font-family: Verdana;
+    font-family: 'Indie Flower', cursive;
 }
 
 nav {
@@ -32,6 +32,10 @@ a:hover {
     color: #5A525E;
 }
 
+ul {
+    text-align: center;
+}
+
 iframe {
     width: 50%;
     display: block;
@@ -43,15 +47,14 @@ iframe {
     padding: 1%;
 }
 .nav-bar-item {
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 4%;
+    padding-right: 4%;
+    font-size: 24px;
 }
 
 .pointer {
     cursor: pointer;
 }
-
-
 
 /* NEWSLETTER SUBSCRIPTIONS */
 form {
@@ -71,6 +74,23 @@ form {
     width: 50%;
     margin-left: 10%;
     margin: 5%;
+    overflow: hidden;
+}
+
+.left {
+    float: left;
+    width: 50%;
+    margin-right: 1%;
+}
+
+.right img {
+    float: right;
+}
+.right {
+    float: right;
+    width: 30%;
+    margin-right: 10%;
+    margin-top: 3%;
 }
 
 input[type=text], input[type=submit] {
@@ -109,11 +129,149 @@ input[type=submit]:hover {
 }
 
 
-/* SIDE PAGES */
+/* SIDE PAGES - centered container 60% width*/
 .secondary-container {
     margin: auto;
     padding: 1%;
     text-align: center;
     border: 3px solid #D7BDE2;
-    width: 60%;
+    width: 55%;
+    
+}
+
+/* RECIPE PAGE - COLLAPSIBLE RECIPES */
+.wrap-collabsible {
+  margin-bottom: 1.2rem;
+  width: 60%;
+  margin: auto;
+}
+
+input[type='checkbox'] {
+  display: none;
+}
+
+.lbl-toggle {
+  display: block;
+
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-align: center;
+
+  padding: 1rem;
+
+  color: #0ea7a4;
+  background: #D5BFD9;
+
+  cursor: pointer;
+
+  border-radius: 7px;
+  transition: all 0.25s ease-out;
+}
+
+.lbl-toggle:hover {
+  color: #214687;
+}
+
+.lbl-toggle::before {
+  content: ' ';
+  display: inline-block;
+
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid currentColor;
+  vertical-align: middle;
+  margin-right: .7rem;
+  transform: translateY(-2px);
+
+  transition: transform .2s ease-out;
+}
+
+.toggle:checked + .lbl-toggle::before {
+  transform: rotate(90deg) translateX(-3px);
+}
+
+.collapsible-content {
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height .25s ease-in-out;
+}
+
+.toggle:checked + .lbl-toggle + .collapsible-content {
+  max-height: 1000px;
+}
+
+.toggle:checked + .lbl-toggle {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.collapsible-content .content-inner {
+  background: rgba(250, 224, 66, .2);
+  border-bottom: 1px solid rgba(0, 15, 60, .45);
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  padding: .5rem 1rem;
+}
+
+
+
+
+
+/* SLIDESHOW STYLES */
+#slides {
+    position: relative;
+    height: 400px;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+
+.slide {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 40%;
+    height: 400px;
+    opacity: 0;
+    z-index: 1;
+
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+}
+
+.showing {
+    opacity: 1;
+    z-index: 2;
+}
+
+/*
+non-essential styles: just for appearance
+*/
+
+.slide {
+    font-size: 40px;
+    padding: 40px;
+    box-sizing: border-box;
+    background: #333;
+    color: #fff;
+}
+
+.slide:nth-of-type(1) {
+    background: red;
+}
+.slide:nth-of-type(2) {
+    background: orange;
+}
+.slide:nth-of-type(3) {
+    background: green;
+}
+.slide:nth-of-type(4) {
+    background: blue;
+}
+.slide:nth-of-type(5) {
+    background: purple;
 }

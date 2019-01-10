@@ -5,25 +5,45 @@
         <title>Lift with Shan</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
         <link rel="stylesheet" href="index.css">
         <link rel="icon" type="image/png" href="favicon.png">
-        
+        <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Patrick+Hand" rel="stylesheet">
+
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
         <script src="nav.js"></script>
-        <script src="subscription.js"></script>
     </head>
 
     <body>
-        
+
         <!-- Navigation -->
         <div class="nav-bar">
             <nav id="nav"><script>printNavBar();</script></nav>
         </div>
 
         <h1>Get Strong with Me!</h1>
-
+        <!--
+                <ul id="slides">
+                    <li class="slide showing">Slide 1</li>
+                    <li class="slide">Slide 2</li>
+                    <li class="slide">Slide 3</li>
+                    <li class="slide">Slide 4</li>
+                    <li class="slide">Slide 5</li>
+                </ul>
+        
+                <script>
+                    var slides = document.querySelectorAll('#slides .slide');
+                    var currentSlide = 0;
+                    var slideInterval = setInterval(nextSlide, 3000);
+        
+                    function nextSlide() {
+                        slides[currentSlide].className = 'slide';
+                        currentSlide = (currentSlide + 1) % slides.length;
+                        slides[currentSlide].className = 'slide showing';
+                    }
+                </script>
+        -->
         <div class="form-area">
             <form action="/subscribe" method="post">
                 <div class="newsletter-container">
@@ -40,37 +60,43 @@
 
         <div class="index-container">
             <h2>About Me</h2>
-            <p> Hey y'all! My name is Shannon and I'm currently 21 years old. I started my fitness journey about 
-                5 years ago when I became obsessed with cardio. Yup, I was one of THOSE fitness (cardio bunny) people. Not 
-                hating on those people, though! Trust me, cardio is amazing and it has SO many benefits. But 
-                regardless, I still didn't have the body I wanted. I was lean and I didn't need to lose any weight - 
-                in fact, I almost looked too skinny. I was 5'9" and 122 lbs (my all-time low) when I decided to get into lifting. That was 
-                about 2 years ago. So here I am, 5'9" and all 150 lbs of me!
-                <br> As of February 2019, I finished my first successful bulk. I'm now in the process of my first official 'cut', and I plan 
-                to put all of my personal experiences with it on the bulking and cutting pages that you can 
-                find on the navigation tab above. So if you're thinking about going through a bulking or cutting phase for 
-                the first time, go to those pages I just mentioned because I wrote them specifically for you!!
-            </p>
+            <div class="left">
+                <p> Hey y'all! I'm Shannon and I'm currently 21 years old. I started my fitness journey about 
+                    5 years ago when I became obsessed with cardio. Yup, I was one of those "cardio bunnies". Trust me, cardio is amazing and 
+                    it has SO many benefits. But regardless, I still didn't have the body I wanted. I was lean and I didn't need to lose any weight - 
+                    in fact, I almost looked too skinny. I was 5'9" and 122 lbs (my all-time low) when I decided to get into lifting. That was 
+                    about 2 years ago. So here I am, 5'9" and all 150 lbs of me!
+                    <br> As of February 2019, I finished my first successful bulk. I'm now in the process of my first official 'cut', and I plan 
+                    to put all of my personal experiences with it on the bulking and cutting pages that you can 
+                    find on the navigation tab above. So if you're thinking about going through a bulking or cutting phase for 
+                    the first time, go to those pages I just mentioned because I wrote them specifically for you!!
+                </p>
+            </div>
+            <div class="right">
+                <img width='300' height='300' src='favicon.png' alt='Image could not be loaded'>
+            </div>
         </div>
 
         <div class="index-container">
             <h2>What I Offer</h2>
-            <p> Bla bla bla, more info can go here </p>
+            <p>
+                In addition to the information you can find for free (mainly in the Recipes, Bulking, and Cutting tabs), I also provide more in-depth services 
+                you can buy including in-person personal training (if you're in the area of course), online coaching, and macro help. Contact me for pricing :)
+            </p>
         </div>
 
         <div class="index-container">
-            <h2>Follow Me on <a href='http://www.instagram.com'><i class='fa fa-instagram'></i></a> !</h2>
+            <h2>Follow Me on <a href='http://www.instagram.com/shanabanana_x'><i class='fa fa-instagram'></i></a> !</h2>
             <p>
                 Looking for new workout videos or to perfect your form when performing certain exercises? 
                 Follow me on Instagram for all the workout videos your little heart desires, and contact 
                 me if you can't find what you're looking for so I can improve my posts based on what YOU want!
             </p>
         </div>
-        
-        <br><br><br>
         <!--<div w3-include-html="content.html"></div>-->
 
         <!-- Footer -->
+        <br><br><br>
         <div class="footer-area">
             <footer id='myFooter'>
                 <script>printFooter();</script>
