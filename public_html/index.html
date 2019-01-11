@@ -23,40 +23,26 @@
         </div>
 
         <h1>Get Strong with Me!</h1>
-        <!--
-                <ul id="slides">
-                    <li class="slide showing">Slide 1</li>
-                    <li class="slide">Slide 2</li>
-                    <li class="slide">Slide 3</li>
-                    <li class="slide">Slide 4</li>
-                    <li class="slide">Slide 5</li>
-                </ul>
-        
-                <script>
-                    var slides = document.querySelectorAll('#slides .slide');
-                    var currentSlide = 0;
-                    var slideInterval = setInterval(nextSlide, 3000);
-        
-                    function nextSlide() {
-                        slides[currentSlide].className = 'slide';
-                        currentSlide = (currentSlide + 1) % slides.length;
-                        slides[currentSlide].className = 'slide showing';
-                    }
-                </script>
-        -->
-        <div class="form-area">
-            <form action="/subscribe" method="post">
-                <div class="newsletter-container">
-                    <h2>Subscribe to My Newsletter!</h2>
-                    <p>For fitness tips, recipes, and fun workouts!</p>
 
-                    <input type="text" placeholder="First name" name="name" required>
-                    <input type="text" placeholder="Email address" name="email" required>
+        <ul id="slides">
+            <li class="slide showing">Slide 1</li>
+            <li class="slide">Slide 2</li>
+            <li class="slide">Slide 3</li>
+            <li class="slide">Slide 4</li>
+            <li class="slide">Slide 5</li>
+        </ul>
 
-                    <input class="pointer" type="submit" value="Subscribe">
-                </div>
-            </form>
-        </div>
+        <script>
+            var slides = document.querySelectorAll('#slides .slide');
+            var currentSlide = 0;
+            var slideInterval = setInterval(nextSlide, 3000);
+
+            function nextSlide() {
+                slides[currentSlide].className = 'slide';
+                currentSlide = (currentSlide + 1) % slides.length;
+                slides[currentSlide].className = 'slide showing';
+            }
+        </script>
 
         <div class="index-container">
             <h2>About Me</h2>
@@ -73,7 +59,7 @@
                 </p>
             </div>
             <div class="right">
-                <img width='300' height='300' src='favicon.png' alt='Image could not be loaded'>
+                <img src='favicon.png' alt='Image could not be loaded'>
             </div>
         </div>
 
@@ -93,7 +79,20 @@
                 me if you can't find what you're looking for so I can improve my posts based on what YOU want!
             </p>
         </div>
-        <!--<div w3-include-html="content.html"></div>-->
+
+        <div class="form-area">
+            <form action="/subscribe" method="post">
+                <div class="newsletter-container">
+                    <h2>Subscribe to My Newsletter!</h2>
+                    <p>For fitness tips, recipes, and fun workouts!</p>
+
+                    <input type="text" placeholder="First name" name="name" required>
+                    <input type="text" placeholder="Email address" name="email" required>
+
+                    <input class="pointer" type="submit" value="Subscribe">
+                </div>
+            </form>
+        </div>
 
         <!-- Footer -->
         <br><br><br>
